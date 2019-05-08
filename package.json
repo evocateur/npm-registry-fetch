@@ -1,5 +1,5 @@
 {
-  "name": "npm-registry-fetch",
+  "name": "@evocateur/npm-registry-fetch",
   "version": "3.9.0",
   "description": "Fetch-based http client for use with npm registry APIs",
   "main": "index.js",
@@ -7,6 +7,9 @@
     "*.js",
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prerelease": "npm t",
     "postrelease": "npm publish && git push --follow-tags",
@@ -16,7 +19,7 @@
     "update-coc": "weallbehave -o . && git add CODE_OF_CONDUCT.md && git commit -m 'docs(coc): updated CODE_OF_CONDUCT.md'",
     "update-contrib": "weallcontribute -o . && git add CONTRIBUTING.md && git commit -m 'docs(contributing): updated CONTRIBUTING.md'"
   },
-  "repository": "https://github.com/npm/registry-fetch",
+  "repository": "https://github.com/evocateur/npm-registry-fetch",
   "keywords": [
     "npm",
     "registry",
